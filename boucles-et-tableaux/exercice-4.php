@@ -17,6 +17,11 @@ for ($i =0; $i < count($users); $i ++)
 
 }
 
+foreach ($users as $key => $profils)
+{
+    echo $profils["firstName"] . " " . $profils["lastName"] . "<br>";
+}
+
 ?>
 
 
