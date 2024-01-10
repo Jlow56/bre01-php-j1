@@ -1,0 +1,58 @@
+<!--Utilisez les codes PHP, HTML et CSS ci-dessous, utilisez une condition pour afficher les variables. -->
+<!--Si le nombre est pair, affichez le dans un paragraphe qui a la classe `red`. -->
+<!--S'il est impair affichez le dans un paragraphe qui a la classe `blue`.-->
+<?php
+$number1 = 42;
+$number2 = 33;
+?>
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8" />
+        <title>Exercice 2 echo</title>
+        <link rel="stylesheet" href="style.css" />
+        <style>
+            .red {
+                color: red;
+            }
+
+            .blue {
+                color: blue;
+            }
+        </style>
+    </head>
+    
+    <body>
+        <?php
+        
+        if ($number1 % 2 === 0)
+        {
+            echo "<p class='red'>$number1</p>";
+        }
+        else 
+        {
+            echo "<p class='blue'>$number1</p>";
+        }
+            
+        if ($number2 % 2 == 0) 
+        {
+        echo "<p class='red'>$number2</p>";
+        }
+        
+        else 
+        {
+        echo "<p class='blue'>$number2</p>";
+        }
+        
+        ?>
+    </body>
+    </html>
+    <!--```-->
+
+<!--### N'oubliez pas de sauvegarder votre travail-->
+
+<!--```sh-->
+<!--git add exercice-2.phtml-->
+<!--git commit -m "exercice 2 echo"-->
+<!--git push-->
+<!--```-->
